@@ -1,0 +1,11 @@
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.csprojResolveAssemblyReference.cache
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.MyBookCollection.resources
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.Properties.Resources.resources
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.csproj.GenerateResource.Cache
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\MyBookCollectionUI.exe.config
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\MyBookCollectionUI.exe
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\MyBookCollectionUI.pdb
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\MyBookCollectionLibrary.dll
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\MyBookCollectionLibrary.pdb
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.exe
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.pdb
