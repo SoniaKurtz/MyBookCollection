@@ -32,7 +32,8 @@
 			this.addNewBookButton = new System.Windows.Forms.Button();
 			this.editBookButton = new System.Windows.Forms.Button();
 			this.deleteBookButton = new System.Windows.Forms.Button();
-			this.listOfBooks = new System.Windows.Forms.ListBox();
+			this.dataGridViewBooks = new System.Windows.Forms.DataGridView();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBooks)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// headerName
@@ -72,21 +73,20 @@
 			this.deleteBookButton.Text = "Delete";
 			this.deleteBookButton.UseVisualStyleBackColor = true;
 			// 
-			// listOfBooks
+			// dataGridViewBooks
 			// 
-			this.listOfBooks.FormattingEnabled = true;
-			this.listOfBooks.ItemHeight = 21;
-			this.listOfBooks.Location = new System.Drawing.Point(12, 84);
-			this.listOfBooks.Name = "listOfBooks";
-			this.listOfBooks.Size = new System.Drawing.Size(442, 403);
-			this.listOfBooks.TabIndex = 5;
+			this.dataGridViewBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridViewBooks.Location = new System.Drawing.Point(12, 102);
+			this.dataGridViewBooks.Name = "dataGridViewBooks";
+			this.dataGridViewBooks.Size = new System.Drawing.Size(442, 386);
+			this.dataGridViewBooks.TabIndex = 6;
 			// 
 			// MyBookCollection
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(613, 500);
-			this.Controls.Add(this.listOfBooks);
+			this.Controls.Add(this.dataGridViewBooks);
 			this.Controls.Add(this.deleteBookButton);
 			this.Controls.Add(this.editBookButton);
 			this.Controls.Add(this.addNewBookButton);
@@ -96,6 +96,7 @@
 			this.Name = "MyBookCollection";
 			this.Text = "My Book Collection";
 			this.Load += new System.EventHandler(this.MyBookCollection_Load);
+			((System.ComponentModel.ISupportInitialize)(this.dataGridViewBooks)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -107,6 +108,6 @@
 		private System.Windows.Forms.Button addNewBookButton;
 		private System.Windows.Forms.Button editBookButton;
 		private System.Windows.Forms.Button deleteBookButton;
-		private System.Windows.Forms.ListBox listOfBooks;
+		private System.Windows.Forms.DataGridView dataGridViewBooks;
 	}
 }

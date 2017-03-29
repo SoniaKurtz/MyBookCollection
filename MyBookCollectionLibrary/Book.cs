@@ -15,13 +15,5 @@ namespace MyBookCollectionLibrary
 		public int PublicationDate { get; set; }
 		public string Publisher { get; set; }
 
-		public string DisplayBook
-		{
-			get
-			{
-				return string.Format($"{AuthorFirstName} {AuthorLastName}: {BookTitle}. " +
-					$"{Publisher}, {PublicationDate}.");
-			}
-		}
 	}
 }

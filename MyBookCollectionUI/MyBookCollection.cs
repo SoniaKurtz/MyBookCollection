@@ -15,32 +15,32 @@ namespace MyBookCollectionUI
 	{
 		private BookCollection bookCollection = new BookCollection();
 		BindingSource booksBinding = new BindingSource();
+		BindingList<Book> bList = new BindingList<Book>(); 
 
 		public MyBookCollection()
 		{
 			InitializeComponent();
 			SetUpData();
-			booksBinding.DataSource = bookCollection.MyBooks;
-			listOfBooks.DataSource = booksBinding;
-			listOfBooks.DisplayMember = "DisplayBook";
-			listOfBooks.ValueMember = "DisplayBook";
+			booksBinding.DataSource = bList;
+			dataGridViewBooks.DataSource = booksBinding;
 		}
 
 		private void MyBookCollection_Load(object sender, EventArgs e) {}
 
 		private void SetUpData()
 		{
-			bookCollection.MyBooks.Add(new Book
+			
+			bList.Add(new Book
 			{
-				ID = 001,
-				AuthorFirstName = "George",
-				AuthorLastName = "Saunders",
-				BookTitle = "10 grudnia: opowiadania",
-				PublicationDate = 2016,
-				Publisher = "W.A.B"
+				ID = 003,
+				AuthorFirstName = "Eleanor",
+				AuthorLastName = "Catton",
+				BookTitle = "Wszystko, co lśni",
+				PublicationDate = 2014,
+				Publisher = "Wydawnictwo Literackie"
 			});
 
-			bookCollection.MyBooks.Add(new Book
+			bList.Add(new Book
 			{
 				ID = 002,
 				AuthorFirstName = "Andrzej",
@@ -50,14 +50,14 @@ namespace MyBookCollectionUI
 				Publisher = "Czarne"
 			});
 
-			bookCollection.MyBooks.Add(new Book
+			bList.Add(new Book
 			{
-				ID = 003,
-				AuthorFirstName = "Eleanor",
-				AuthorLastName = "Catton",
-				BookTitle = "Wszystko, co lśni",
-				PublicationDate = 2014,
-				Publisher = "Wydawnictwo Literackie"
+				ID = 001,
+				AuthorFirstName = "George",
+				AuthorLastName = "Saunders",
+				BookTitle = "10 grudnia: opowiadania",
+				PublicationDate = 2016,
+				Publisher = "W.A.B"
 			});
 		}
 	}
