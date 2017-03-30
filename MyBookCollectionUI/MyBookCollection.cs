@@ -13,14 +13,18 @@ namespace MyBookCollectionUI
 {
 	public partial class MyBookCollection : Form
 	{
-		private BookCollection bookCollection = new BookCollection();
 		BindingSource booksBinding = new BindingSource();
-		BindingList<Book> bList = new BindingList<Book>(); 
+		BindingList<Book> bList = new BindingList<Book>();
+		List<Book> books = new List<Book>();
 
 		public MyBookCollection()
 		{
 			InitializeComponent();
 			SetUpData();
+
+			myBooksListBox.DataSource = books;
+			myBooksListBox.DisplayMember = "FullInfoBook";
+
 			booksBinding.DataSource = bList;
 			dataGridViewBooks.DataSource = booksBinding;
 		}
@@ -29,7 +33,7 @@ namespace MyBookCollectionUI
 
 		private void SetUpData()
 		{
-			
+
 			bList.Add(new Book
 			{
 				ID = 003,
@@ -59,6 +63,18 @@ namespace MyBookCollectionUI
 				PublicationDate = 2016,
 				Publisher = "W.A.B"
 			});
+		}
+
+		private void addNewBookButton_Click(object sender, EventArgs e)
+		{
+			Cataloging catalog = new Cataloging();
+			catalog.Show();
+		}
+
+		private void searchButton_Click(object sender, EventArgs e)
+		{
+			DataAccess db = new DataAccess();
+			books = db.GetBooks(findBookByTitleTextBox.Text);
 		}
 	}
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cataloging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cataloging.Designer.cs">
+      <DependentUpon>Cataloging.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyBookCollection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cataloging.resx">
+      <DependentUpon>Cataloging.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyBookCollection.resx">
       <DependentUpon>MyBookCollection.cs</DependentUpon>
     </EmbeddedResource>

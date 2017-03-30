@@ -14,6 +14,5 @@ namespace MyBookCollectionLibrary
 		{
 			MyBooks = new List<Book>();
 		}
-
 	}
 }
