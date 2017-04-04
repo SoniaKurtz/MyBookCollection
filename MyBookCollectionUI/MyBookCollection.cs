@@ -22,14 +22,19 @@ namespace MyBookCollectionUI
 			InitializeComponent();
 			SetUpData();
 
-			myBooksListBox.DataSource = books;
-			myBooksListBox.DisplayMember = "FullInfoBook";
+			UpdateBinding();
 
 			booksBinding.DataSource = bList;
 			dataGridViewBooks.DataSource = booksBinding;
 		}
 
 		private void MyBookCollection_Load(object sender, EventArgs e) {}
+
+		private void UpdateBinding()
+		{
+			myBooksListBox.DataSource = books;
+			myBooksListBox.DisplayMember = "FullInfoBook";
+		}
 
 		private void SetUpData()
 		{
@@ -75,6 +80,7 @@ namespace MyBookCollectionUI
 		{
 			DataAccess db = new DataAccess();
 			books = db.GetBooks(findBookByTitleTextBox.Text);
+			UpdateBinding();
 		}
 	}
 }

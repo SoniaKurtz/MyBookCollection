@@ -10,3 +10,5 @@ C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\My
 C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.exe
 C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.pdb
 C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.Cataloging.resources
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\Dapper.dll
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\Dapper.xml

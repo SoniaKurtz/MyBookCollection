@@ -147,6 +147,7 @@
 			this.addNewBookButton.TabIndex = 12;
 			this.addNewBookButton.Text = "Save";
 			this.addNewBookButton.UseVisualStyleBackColor = true;
+			this.addNewBookButton.Click += new System.EventHandler(this.addNewBookButton_Click);
 			// 
 			// Cataloging
 			// 

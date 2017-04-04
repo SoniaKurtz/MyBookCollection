@@ -3,3 +3,5 @@ C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionLibrary\bin\Deb
 C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionLibrary\obj\Debug\MyBookCollectionLibrary.csprojResolveAssemblyReference.cache
 C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionLibrary\obj\Debug\MyBookCollectionLibrary.dll
 C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionLibrary\obj\Debug\MyBookCollectionLibrary.pdb
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionLibrary\bin\Debug\Dapper.dll
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionLibrary\bin\Debug\Dapper.xml
