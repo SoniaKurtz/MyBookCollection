@@ -22,7 +22,7 @@ namespace MyBookCollectionLibrary
 			}
 		}
 
-		public void AddBook(string authorFirstName, string authorLastName, string bookTitle, int publicationDate, string publisher)
+		public void AddBook(int id, string authorFirstName, string authorLastName, string bookTitle, int publicationDate, string publisher)
 		{
 			using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(SQLConnectionHelper.CnnVal("MyBooksDB")))
 			{
@@ -31,6 +31,7 @@ namespace MyBookCollectionLibrary
 
 				books.Add(new Book
 				{
+					ID = id,
 					AuthorFirstName = authorFirstName,
 					AuthorLastName = authorLastName,
 					BookTitle = bookTitle,
@@ -38,7 +39,7 @@ namespace MyBookCollectionLibrary
 					Publisher = publisher
 				});
 
-				connection.Execute("dbo.spINSERT @AuthorFirstName, @AuthorLastName, @BookTitle, @PublicationDate, @Publisher")
+				connection.Execute("dbo.spINSERT @ID, @AuthorFirstName, @AuthorLastName, @BookTitle, @PublicationDate, @Publisher", books);
 			}
 		}
 	}

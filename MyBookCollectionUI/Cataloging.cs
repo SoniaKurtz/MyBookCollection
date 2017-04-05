@@ -21,7 +21,8 @@ namespace MyBookCollectionUI
 		private void addNewBookButton_Click(object sender, EventArgs e)
 		{
 			DataAccess db = new DataAccess();
-			db.AddBook(textBoxAuthorFirstName.Text,
+			db.AddBook(int.Parse(textBoxID.Text),
+				textBoxAuthorFirstName.Text,
 						textBoxAuthorLastName.Text,
 						textBoxBookTitle.Text,
 						int.Parse(textBoxDate.Text), 

@@ -11,63 +11,25 @@ using MyBookCollectionLibrary;
 
 namespace MyBookCollectionUI
 {
-	public partial class MyBookCollection : Form
+	public partial class MyBookCollection : MetroFramework.Forms.MetroForm
 	{
-		BindingSource booksBinding = new BindingSource();
-		BindingList<Book> bList = new BindingList<Book>();
 		List<Book> books = new List<Book>();
 
 		public MyBookCollection()
 		{
 			InitializeComponent();
-			SetUpData();
-
 			UpdateBinding();
-
-			booksBinding.DataSource = bList;
-			dataGridViewBooks.DataSource = booksBinding;
 		}
 
-		private void MyBookCollection_Load(object sender, EventArgs e) {}
+		private void MyBookCollection_Load(object sender, EventArgs e)
+		{
+			UpdateBinding();
+		}
 
 		private void UpdateBinding()
 		{
 			myBooksListBox.DataSource = books;
 			myBooksListBox.DisplayMember = "FullInfoBook";
-		}
-
-		private void SetUpData()
-		{
-
-			bList.Add(new Book
-			{
-				ID = 003,
-				AuthorFirstName = "Eleanor",
-				AuthorLastName = "Catton",
-				BookTitle = "Wszystko, co lśni",
-				PublicationDate = 2014,
-				Publisher = "Wydawnictwo Literackie"
-			});
-
-			bList.Add(new Book
-			{
-				ID = 002,
-				AuthorFirstName = "Andrzej",
-				AuthorLastName = "Stasiuk",
-				BookTitle = "Wschód",
-				PublicationDate = 2014,
-				Publisher = "Czarne"
-			});
-
-			bList.Add(new Book
-			{
-				ID = 001,
-				AuthorFirstName = "George",
-				AuthorLastName = "Saunders",
-				BookTitle = "10 grudnia: opowiadania",
-				PublicationDate = 2016,
-				Publisher = "W.A.B"
-			});
 		}
 
 		private void addNewBookButton_Click(object sender, EventArgs e)

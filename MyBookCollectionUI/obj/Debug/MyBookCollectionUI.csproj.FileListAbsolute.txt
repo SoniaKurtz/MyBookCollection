@@ -12,3 +12,6 @@ C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\My
 C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\obj\Debug\MyBookCollectionUI.Cataloging.resources
 C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\Dapper.dll
 C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\Dapper.xml
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\MetroFramework.Design.dll
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\MetroFramework.dll
+C:\Users\Sonia\Documents\GitHub\MyBookCollection\MyBookCollectionUI\bin\Debug\MetroFramework.Fonts.dll
